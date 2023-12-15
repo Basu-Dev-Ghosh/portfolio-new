@@ -12,7 +12,7 @@ const Buttons = () => {
         icon={<FaExternalLinkAlt className="mr-3" />}
         fill={false}
         text={"View projects"}
-        className="py-3 px-6 m-2 w-50"
+        className="py-3 px-6 m-2 w-[188px] md:w-50"
       />
       <Button
         onClick={() => {
@@ -21,7 +21,7 @@ const Buttons = () => {
         icon={<FaPhoneAlt className="mr-3" />}
         fill
         text={"Contact me"}
-        className="py-3 px-6 m-2 w-50"
+        className="py-3 px-6 m-2 w-[188px] md:w-50"
       />
     </>
   );
