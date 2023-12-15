@@ -1,7 +1,7 @@
 "use server";
 
 import { Resend } from "resend";
-const resend = new Resend("re_S4oUk6Br_6LH81NbSFbBTm2unnBnvU83A");
+const resend = new Resend(process.env.RESEND_API_KEY);
 export async function generateEmailBody(user: User) {
   let subject = `New message from ${user.name} through portfolio`;
   let body = `

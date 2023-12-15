@@ -57,6 +57,7 @@ const Projects = () => {
         {data?.map((project, i) => {
           return (
             <ProjectCard
+              key={project.id}
               variant={i % 2 === 0 ? "left" : "right"}
               project={project}
             />
@@ -68,6 +69,7 @@ const Projects = () => {
           .fill(0)
           .map((_, i) => (
             <div
+              key={i}
               onClick={() => {
                 setPage(i + 1);
                 window.scrollTo({ top: 700, left: 0, behavior: "smooth" });
