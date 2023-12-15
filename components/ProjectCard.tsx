@@ -30,8 +30,11 @@ const ProjectCard = ({
         <div className="flex mt-3 justify-center items-center md:justify-start flex-wrap">
           {project.skills
             .filter((_, i) => i < 3)
-            .map((skill) => (
-              <div className="w-auto py-1 px-2 text-xs border border-black rounded-xl font-semibold mr-2 mt-2">
+            .map((skill, i) => (
+              <div
+                key={i}
+                className="w-auto py-1 px-2 text-xs border border-black rounded-xl font-semibold mr-2 mt-2"
+              >
                 {skill}
               </div>
             ))}
