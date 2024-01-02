@@ -12,17 +12,18 @@ const ProjectCard = ({
 }) => {
   return (
     <div
-      className={`h-auto items-center justify-center max-w-full flex flex-col mt-3   ${
+      className={`h-auto items-center justify-center max-w-full flex flex-col mt-6 pb-4 border-4 shadow-xl   ${
         variant === "left" ? "md:flex-row" : "md:flex-row-reverse"
       }`}
     >
       <Image
         src={project.pic}
         width={250}
-        height={250}
+        height={350}
+        style={{ objectFit: "scale-down" }}
         alt="Picture of the project"
       />
-      <div className="w-full mt-4 text-center md:text-left md:mt-0 md:w-2/4 md:p-4">
+      <div className="w-full mt-4 text-center md:text-left md:mt-0 md:w-2/4 md:p-4 px-4">
         <h1 className="text-lg font-semibold">{project.name}</h1>
         <p className="text-[.8rem] break-words md:w-[180px] mt-1">
           {project.description}
@@ -39,7 +40,7 @@ const ProjectCard = ({
               </div>
             ))}
         </div>
-        <div className="flex items-center mt-4">
+        <div className="flex items-center mt-4 justify-center">
           <Button
             onClick={() => window.open(project.live_link, "_blank")}
             icon={<FaExternalLinkAlt className="mr-2 text-xs" />}

@@ -1,6 +1,17 @@
 export const projects: Project[] = [
   {
-    id: 1,
+    id: 10,
+    name: "KishanKunj- Mobile App",
+    pic: "/kishankunj.png",
+    description:
+      "A mobile app for a College students to manage and track their daily Expenses among others roommates in a very easy and proper way in respect to who is present currently in room or not.",
+    skills: ["react-native", "supabase", "PDF-invoice", "typescript"],
+    live_link:
+      "https://drive.google.com/file/d/1eHskr976p1M99gYZadi24xjMneNtIKO8/view?usp=sharing",
+    github_link: "https://github.com/Basu-Dev-Ghosh/kishan-kunj-mobile-app",
+  },
+  {
+    id: 9,
     name: "Trackzon",
     pic: "/trackzon.png",
     description:
@@ -10,7 +21,7 @@ export const projects: Project[] = [
     github_link: "https://github.com/Basu-Dev-Ghosh/trackzon",
   },
   {
-    id: 2,
+    id: 8,
     name: "Trello clone",
     pic: "/trello-clone.png",
     description: "A todo app with drag n drop feature and used appwrite cloud",
@@ -19,7 +30,7 @@ export const projects: Project[] = [
     github_link: "https://github.com/Basu-Dev-Ghosh/todo-app-drag-n-drop",
   },
   {
-    id: 3,
+    id: 7,
     name: "EduConnect",
     pic: "/educonnect.png",
     description:
@@ -36,7 +47,7 @@ export const projects: Project[] = [
     github_link: "https://github.com/Basu-Dev-Ghosh/EduConnect",
   },
   {
-    id: 4,
+    id: 6,
     name: "Resend Clone",
     pic: "/resend-clone.png",
     description: "A front end clone of official resend home page",
@@ -55,7 +66,7 @@ export const projects: Project[] = [
     github_link: "https://github.com/Basu-Dev-Ghosh/littleshows-web",
   },
   {
-    id: 6,
+    id: 4,
     name: "Paymaster",
     pic: "/paymaster.png",
     description:
@@ -65,7 +76,7 @@ export const projects: Project[] = [
     github_link: "https://github.com/Basu-Dev-Ghosh/Paymaster",
   },
   {
-    id: 7,
+    id: 3,
     name: "Teambo",
     pic: "/teambo.png",
     description:
@@ -75,7 +86,7 @@ export const projects: Project[] = [
     github_link: "https://github.com/Basu-Dev-Ghosh/teambo",
   },
   {
-    id: 8,
+    id: 2,
     name: "Cheapstore",
     pic: "/cheapstore.png",
     description:
@@ -85,7 +96,7 @@ export const projects: Project[] = [
     github_link: "https://github.com/Basu-Dev-Ghosh/Cheapstore-client",
   },
   {
-    id: 9,
+    id: 1,
     name: "Googla",
     pic: "/googla.png",
     description: "A simple google clone using google search api",

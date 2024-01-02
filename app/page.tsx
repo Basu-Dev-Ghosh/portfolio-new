@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-      <section className="flex flex-col min-h-screen items-center  px-20 py-10">
+      <section className="flex flex-col  items-center  px-20 py-10">
         <div className="rounded-full p-1 bg-black overflow-hidden">
           <Image
             src="/profile.png"

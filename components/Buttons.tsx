@@ -7,7 +7,7 @@ const Buttons = () => {
     <>
       <Button
         onClick={() => {
-          window.scrollTo({ top: 700, left: 0, behavior: "smooth" });
+          window.scrollTo({ top: 300, left: 0, behavior: "smooth" });
         }}
         icon={<FaExternalLinkAlt className="mr-3" />}
         fill={false}
