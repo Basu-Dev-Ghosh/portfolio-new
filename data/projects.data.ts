@@ -43,7 +43,7 @@ export const projects: Project[] = [
       "expressjs",
       "mongoDB",
     ],
-    live_link: "https://edu-connect-lilac.vercel.app/",
+    live_link: "https://edu-connect-jade.vercel.app/",
     github_link: "https://github.com/Basu-Dev-Ghosh/EduConnect",
   },
   {
