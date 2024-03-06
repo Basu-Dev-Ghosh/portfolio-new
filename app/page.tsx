@@ -1,4 +1,5 @@
 import Buttons from "@/components/Buttons";
+import Chatbot from "@/components/Chatbot";
 import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
 import Image from "next/image";
@@ -29,6 +30,7 @@ export default function Home() {
 
       <Projects />
       <Contact />
+      <Chatbot />
     </main>
   );
 }

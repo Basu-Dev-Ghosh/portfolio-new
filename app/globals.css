@@ -22,3 +22,24 @@ body {
       background-position:top;
       background-size:contain;
 }
+.dots {
+  width: 3.2px;
+  height: 3.2px;
+  margin-left: 22px;
+  margin-top: 15px;
+  border-radius: 50%;
+  color: #181818;
+  box-shadow: 15.2px 0 0 5.6px, 30.4px 0 0 2.4px, 45.599999999999994px 0 0 0;
+  transform: translateX(-30.4px);
+  animation: dots-ijr34dsm 0.4s infinite alternate linear;
+}
+
+@keyframes dots-ijr34dsm {
+  50% {
+    box-shadow: 15.2px 0 0 2.4px, 30.4px 0 0 5.6px, 45.599999999999994px 0 0 2.4px;
+  }
+
+  100% {
+    box-shadow: 15.2px 0 0 0, 30.4px 0 0 2.4px, 45.599999999999994px 0 0 5.6px;
+  }
+}
