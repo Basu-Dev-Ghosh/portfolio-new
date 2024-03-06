@@ -57,7 +57,7 @@ const Chatbot = () => {
       setMessage("");
       setIsLoading(true);
       const response = await fetch(
-        `https://portfolio-chatbot-server.onrender.com/ask?question=${encodeURIComponent(
+        `http://139.144.1.66/ask?question=${encodeURIComponent(
           message
         )}`
       );
