@@ -47,27 +47,43 @@ const Chatbot = () => {
     }
 
     try {
-      setMessages([
-        ...messages,
-        {
-          role: "user",
-          message,
-        },
-      ]);
-      setMessage("");
+      setMessages((old) => {
+        return [
+          ...old,
+          {
+            role: "user",
+            message,
+          },
+        ];
+      });
+
       setIsLoading(true);
-      const response = await fetch(
-        `https://portfolio-chatbot-server.onrender.com/ask?question=${encodeURIComponent(
-          message
-        )}`
-      );
+      let content = message;
+      setMessage("");
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          messages,
+          message: content,
+        }),
+      });
+      // const response = await fetch(
+      //   `https://portfolio-chatbot-server.onrender.com/ask?question=${encodeURIComponent(
+      //     message
+      //   )}`
+      // );
+
       const data = await response.json();
+
       setMessages((oldMessages) => {
         return [
           ...oldMessages,
           {
             role: "basu",
-            message: data,
+            message: data.text,
           },
         ];
       });
