@@ -1,5 +1,15 @@
 export const projects: Project[] = [
   {
+    id: 11,
+    name: "Exam Juggad",
+    pic: "/examjuggad.png",
+    description:
+      "A web application which takes question papers(PDF) as input and give you AI generated all common questions and their answers.",
+    skills: ["nextjs", "python", "langchain", "openai", "typescript"],
+    live_link: "https://examjuggad.site/",
+    github_link: "https://github.com/Basu-Dev-Ghosh/exam-juggad",
+  },
+  {
     id: 10,
     name: "KishanKunj- Mobile App",
     pic: "/kishankunj.png",

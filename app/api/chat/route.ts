@@ -54,7 +54,7 @@ export async function POST(req: Request) {
       input: currentMessageContent,
     });
 
-    // console.log(response);
+    console.log(response);
 
     return Response.json(
       {

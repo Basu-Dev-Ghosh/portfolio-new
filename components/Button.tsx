@@ -25,8 +25,8 @@ const Button = ({
         className,
         `flex items-center justify-center ${
           fill
-            ? "bg-[#0013BA] transition-all hover:bg-[#2e3583] text-white "
-            : "border border-black text-black "
+            ? "bg-[#0013BA] transition-all hover:bg-[#2e3583]"
+            : "border border-white text-white "
         } font-bold`
       )}
     >

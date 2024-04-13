@@ -21,6 +21,8 @@ const emptyInputMessages = [
   "Your message decided to be a mime, type again!",
 ];
 const Chatbot = () => {
+  const ref = useRef<HTMLDivElement | null>(null);
+
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [message, setMessage] = useState<string>("");
@@ -106,11 +108,25 @@ const Chatbot = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
   useEffect(scrollToBottom, [messages]);
+
+  const handleClickOutside = (event: any) => {
+    if (ref?.current && !ref?.current?.contains(event.target)) {
+      // Perform your action here
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  });
   return (
     <div>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-4 right-4 inline-flex items-center justify-center text-sm font-medium disabled:pointer-events-none disabled:opacity-50 border rounded-full w-16 h-16 bg-black hover:bg-gray-700 m-0 cursor-pointer border-gray-200 bg-none p-0 normal-case leading-5 hover:text-gray-900"
+        className="fixed bottom-4 right-4 inline-flex items-center justify-center text-sm font-medium disabled:pointer-events-none disabled:opacity-50 border rounded-full w-16 h-16 bg-[#0013BA] hover:bg-blue-900 m-0 cursor-pointer border-gray-200 bg-none p-0 normal-case leading-5 hover:text-gray-900"
         type="button"
         aria-haspopup="dialog"
         aria-expanded="false"
@@ -135,6 +151,7 @@ const Chatbot = () => {
         </svg>
       </button>
       <motion.div
+        ref={ref}
         animate={isOpen ? "open" : "closed"}
         variants={variants}
         style={{

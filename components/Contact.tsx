@@ -36,11 +36,13 @@ const Contact = () => {
   return (
     <section className="flex flex-col  items-center px-20 py-10">
       <div className=" flex flex-col-reverse justify-center items-center md:flex-row md:justify-between ">
-        <h1 className="font-bold text-2xl mb-4 md:mb-0 ">Contact</h1>
+        <h1 className="font-semibold text-4xl mb-4 md:mb-0 text-white">
+          Contact
+        </h1>
       </div>
       <form
         autoComplete="off"
-        className="flex flex-col justify-center md:w-1/3 mt-6"
+        className="flex flex-col justify-center w-[80%] md:w-[40%] mt-6"
         onSubmit={sendmail}
       >
         <input
