@@ -43,8 +43,8 @@ const Projects = () => {
     setSearchText(value);
   }, 500);
   return (
-    <section className="flex flex-col min-h-screen  items-center px-20 py-10">
-      <div className="md:w-[60%] w-[80%] flex flex-col items-center md:flex-row md:justify-between md:mt-16">
+    <section className="flex flex-col min-h-screen  items-center px-8 md:px-20 py-10">
+      <div className="md:w-[60%] w-full flex flex-col items-center md:flex-row md:justify-between md:mt-16">
         <h1 className="font-bold text-4xl mb-4 md:mb-0 md:mr-10 text-white ">
           Projects
         </h1>
