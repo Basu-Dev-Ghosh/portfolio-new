@@ -86,26 +86,6 @@ export const projects: Project[] = [
     github_link: "https://github.com/Basu-Dev-Ghosh/Paymaster",
   },
   {
-    id: 3,
-    name: "Teambo",
-    pic: "/teambo.png",
-    description:
-      "A task management web app where you can create teams and assign tasks to your team members and also can chat with them.",
-    skills: ["reactjs", "firebase", "antd", "bootstrap"],
-    live_link: "https://teambo.app/",
-    github_link: "https://github.com/Basu-Dev-Ghosh/teambo",
-  },
-  {
-    id: 2,
-    name: "Cheapstore",
-    pic: "/cheapstore.png",
-    description:
-      "Cheap Store is a resell platform for educational institutes, it helps in reuse of books, stationery, electronics etc.",
-    skills: ["reactjs", "nodejs", "expressjs", "mongoDB", "bootstrap"],
-    live_link: "http://cheapstore-client.vercel.app/",
-    github_link: "https://github.com/Basu-Dev-Ghosh/Cheapstore-client",
-  },
-  {
     id: 1,
     name: "Googla",
     pic: "/googla.png",

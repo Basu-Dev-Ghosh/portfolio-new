@@ -102,21 +102,7 @@
     "github_link": "https://github.com/Basu-Dev-Ghosh/Paymaster"
   },
 
-  {
-    "id": 2,
-    "name": "Cheapstore",
-    "pic": "/cheapstore.png",
-    "description": "Cheap Store is a resell platform for educational institutes, it helps in reuse of books, stationery, electronics etc.",
-    "skills": [
-      "reactjs",
-      "nodejs",
-      "expressjs",
-      "mongoDB",
-      "bootstrap"
-    ],
-    "live_link": "http://cheapstore-client.vercel.app/",
-    "github_link": "https://github.com/Basu-Dev-Ghosh/Cheapstore-client"
-  },
+
   {
     "id": 1,
     "name": "Googla",
