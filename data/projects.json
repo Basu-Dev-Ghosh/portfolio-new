@@ -101,20 +101,7 @@
     "live_link": "https://www.paymaster.co.in/",
     "github_link": "https://github.com/Basu-Dev-Ghosh/Paymaster"
   },
-  {
-    "id": 3,
-    "name": "Teambo",
-    "pic": "/teambo.png",
-    "description": "A task management web app where you can create teams and assign tasks to your team members and also can chat with them.",
-    "skills": [
-      "reactjs",
-      "firebase",
-      "antd",
-      "bootstrap"
-    ],
-    "live_link": "https://teambo.app/",
-    "github_link": "https://github.com/Basu-Dev-Ghosh/teambo"
-  },
+
   {
     "id": 2,
     "name": "Cheapstore",
@@ -143,3 +130,4 @@
     "github_link": "https://github.com/Basu-Dev-Ghosh/Google_clone"
   }
 ]
+
