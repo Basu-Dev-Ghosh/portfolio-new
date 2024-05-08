@@ -1,5 +1,15 @@
 export const projects: Project[] = [
   {
+    id: 12,
+    name: "Course Juggad",
+    pic: "/coursejuggad.png",
+    description:
+      "A web application which can create courses for students with AI and students also can publish their courses on global.",
+    skills: ["nextjs", "python", "langchain", "openai", "typescript"],
+    live_link: "https://course-juggad.site/",
+    github_link: "https://github.com/Basu-Dev-Ghosh/Course-juggad",
+  },
+  {
     id: 11,
     name: "Exam Juggad",
     pic: "/examjuggad.png",

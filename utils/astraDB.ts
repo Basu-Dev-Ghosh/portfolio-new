@@ -5,6 +5,7 @@ import { OpenAIEmbeddings } from "@langchain/openai";
 const endpoint = process.env.ASTRA_DB_ENDPOINT || "";
 const token = process.env.ASTRA_DB_APPLICATION_TOKEN || "";
 const collection = process.env.ASTRA_DB_COLLECTION || "";
+console.log(endpoint, token, collection);
 
 if (!token || !endpoint || !collection) {
   throw new Error("Please set astra db configuration");
